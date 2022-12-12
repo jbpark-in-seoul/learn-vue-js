@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reactivity 구현</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        var div = document.querySelector('#app');
+        var viewModel = {};
+        
+        /* 
+            `즉시 실행 합수`: 정의 되는 즉시 실행되는 함수.
+                `특징`
+                    1. 필요 없는 전역 변수의 생성을 줄일 수 있다.
+                    2. `private`한 변수를 만들 수 있다.
+                `활용 방법`
+                    1. 단 한번의 사용이 필요한 함수
+
+        */
+        (function() {
+            function init() {
+                // 특정 객체, 객체의 속성, { 정의할 내용 }
+                Object.defineProperty(viewModel, 'str', {
+                    // 속성의 접근 했을 때의 동작을 정의
+                    get: function() {
+                        console.log('접근');
+                    },
+                    // 속성에 값을 할당 했을 때으이 동작을 정의
+                    set: function(newValue) {
+                        console.log('할당', newValue);
+                        render(newValue);
+                    }
+                });
+            }
+            
+            function render(value) {
+                div.innerHTML = value;
+            }
+
+            init();
+        })();
+    </script>
+</body>
+</html>
