@@ -23,6 +23,18 @@
         * 일반적으로 웹 페이지에서 페이지 이동을 할 때는 사용자가 URL을 입력해서 이동하지 않는다.
         * 클릭해서 페이지를 이동할 수 있게 해주는게 `<router-link>`다.
         * 코드를 실행하면 `<a>` 태그로 변형되서 나타난다.
+* 액시오스(axios)
+    * 뷰에서 권고하는 HTTP 통신 라이브러리는 엑시오스(Axios)이다.
+    * Promise 기반의 HTTP 통신 라이브러리이며 상대적으로 다른 HTTP 통신 라이브러리들에 비해 문서화가 잘되어 있고 API가 다양하다.
+    * 자바스크립트의 비동기 처리 패턴
+        * `callback`
+        * `promise`
+        * `promise` + `generator`
+        * `async` & `await`
 
 * 학습 참고 사이트
     * [네비게이션 가드](https://joshua1988.github.io/web-development/vuejs/vue-router-navigation-guards/)
+    * [자바스크립트 비동기 처리와 콜백 함수](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/)
+    * [자바스크립트 Promise 이해하기](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/)
+    * [자바스크립트 async와 await](https://joshua1988.github.io/web-development/javascript/js-async-await/)
+    * [자바스크립트의 동작원리: 엔진, 런타임, 호출 스택](https://joshua1988.github.io/web-development/translation/javascript/how-js-works-inside-engine/)
