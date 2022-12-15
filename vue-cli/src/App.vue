@@ -1,36 +1,42 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    
-    <!-- 컴포넌트 명명법 종류 -->
-    <!-- <hello-world></hello-world>
-    <HelloWorld></HelloWorld>
-    <HelloWorld/> -->
+  <!-- 템플릿 루트(<div>태그)는 한 개만 정의되어야 함. -->
+  <div>
+    <!-- <app-header v-bind:프롭스 속성 이름="상위 컴포넌트의 데이터 이름"></app-header> -->
+    <app-header 
+    v-bind:propsdata="str"
+    v-on:renew="renewStr"></app-header>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from './components/AppHeader.vue';
 
-// export default == new Vue({})
+// var AppHeader = {
+//   template: '<div><h1>Header</h1></div>'
+// }
 export default {
-  // 인스턴스 옵션 속성 or 컴포넌트 옵션 속성
-  name: 'App',
+  // 컴포넌트 재사용성을 위해 기존의 문법대로 `data` 속성을 정의하지 않는다.
+  // new Vue({
+  //   data: {
+  //     str: 'hi'
+  //   }
+  // })
+  data: function() {
+    return {
+      str: 'Header'
+    }
+  },
   components: {
-    HelloWorld
-    // 'hello-wrold': HelloWorld, 와 동일하다
+    'app-header': AppHeader
+  },
+  methods: {
+    renewStr: function() {
+      this.str = 'hi';
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>

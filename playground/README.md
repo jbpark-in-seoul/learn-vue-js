@@ -40,6 +40,18 @@
         ```html
         <div>Hello <span v-if="show">Vue.js</span></div>
         ```
+* Vue CLI 버젼별 차이점
+    * [Vue CLI 2.x]
+        * vue init '프로젝트 템플릿 유형' '프로젝트 폴더 위치'
+        * vue init webpack-simple '프로젝트 폴더 위치'
+    * [Vue CLI 3.x]
+        * vue create '프로젝트 위치'
+* 뷰 코드 컨벤션
+    * `.vue` 파일은 두 단어 이상으로 조합
+        * 프로그램 입장에서는 `HTML` 속성 예약어와 구분이 안되기 때문에 두 단어로 조합해야함
+    * 파일명은 `파스칼케이스` 사용
+
+
     
 
 * 학습 참고 사이트
