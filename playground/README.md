@@ -31,6 +31,16 @@
         * `promise`
         * `promise` + `generator`
         * `async` & `await`
+* 템플릿 문법
+    * 데이터 바인딩
+        ```html
+        <div>{{ message }}</div>
+        ```
+    * 뷰 디렉티브   
+        ```html
+        <div>Hello <span v-if="show">Vue.js</span></div>
+        ```
+    
 
 * 학습 참고 사이트
     * [네비게이션 가드](https://joshua1988.github.io/web-development/vuejs/vue-router-navigation-guards/)

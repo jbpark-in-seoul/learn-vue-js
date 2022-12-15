@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        
+        <p v-bind:id="uuid" v-bind:class="name">{{ number }}</p>
+        <p>{{ number }}</p>
+        <p>{{ doubleNumber }}</p>
+
+        <div v-if="loading">
+            Loading...
+        </div>
+        <div v-else>
+            test user has been logged in
+        </div>
+
+        <div v-show="loading">
+            Loading...
+        </div>
+
+        <input type="text" v-model="message" placeholder="v-model example">
+        <p>message is {{ message }}.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        // `v-if`, `v-else` 는 DOM에 element를 추가하는 문법이다.
+        // `v-show` 는 DOM에 element를 추가하고, 속성을 이용해서 화면에 표기할지를 결정하는 문법이다.
+
+        new Vue({
+            el: '#app',
+            data: {
+                number: 10,
+                uuid: 'abcd',
+                name: 'text-blue',
+                loading: true,
+                message: ''
+            },
+            computed: {
+                doubleNumber: function() {
+                    return this.number * 2
+                }
+            }
+        })
+    </script>
+</body>
+</html>
