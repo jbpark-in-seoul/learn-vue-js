@@ -43,6 +43,7 @@
     
 
 * 학습 참고 사이트
+    * [Vue.js 공식 사이트](https://vuejs.org/)
     * [네비게이션 가드](https://joshua1988.github.io/web-development/vuejs/vue-router-navigation-guards/)
     * [자바스크립트 비동기 처리와 콜백 함수](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/)
     * [자바스크립트 Promise 이해하기](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/)

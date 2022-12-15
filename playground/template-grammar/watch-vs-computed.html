@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        {{ number }}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        // `computed` 속성은 간단한 계산이나 validation 검사에 사용하는게 좋다.
+        // `watch` 속성은 무거운 로직 처리에 좋다. (ex. axios 통신)
+        // 공식 문서에 표기된 내용이다.
+        // https://vuejs.org/guide/essentials/computed.html#ad
+        new Vue({
+            el: '#app',
+            data: {
+                number: 10
+            },
+            computed: {
+                doubleNumber: function() {
+                    return this.number * 2;
+                }
+            },
+            watch: {
+                number: function(newValue, oldValue) {
+                    this.fetchUserByNumber(newValue);
+                }
+            },
+            methods: {
+                fetchUserByNumber: function(number) {
+                    console.log(number);
+                    // axios.get(number);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
