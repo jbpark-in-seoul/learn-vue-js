@@ -50,14 +50,37 @@
     * `.vue` 파일은 두 단어 이상으로 조합
         * 프로그램 입장에서는 `HTML` 속성 예약어와 구분이 안되기 때문에 두 단어로 조합해야함
     * 파일명은 `파스칼케이스` 사용
+* 강의 정리
+    * Reactivity
+    * 인스턴스
+    * 컴포넌트
+    * 컴포넌트 통신
+        * `props`
+        * `event emit`
+    * HTTP 통신 라이브러리 (axios)
+    * 템플릿 문법
+        * 데이터 바인딩
+        * 뷰 디렉티브
+    * Vue CLI
+    * 싱글 파일 컴포넌트(`.vue`)
 
 
     
 
 * 학습 참고 사이트
-    * [Vue.js 공식 사이트](https://vuejs.org/)
-    * [네비게이션 가드](https://joshua1988.github.io/web-development/vuejs/vue-router-navigation-guards/)
-    * [자바스크립트 비동기 처리와 콜백 함수](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/)
-    * [자바스크립트 Promise 이해하기](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/)
-    * [자바스크립트 async와 await](https://joshua1988.github.io/web-development/javascript/js-async-await/)
-    * [자바스크립트의 동작원리: 엔진, 런타임, 호출 스택](https://joshua1988.github.io/web-development/translation/javascript/how-js-works-inside-engine/)
+    * 공식 사이트
+        * [Vue.js 공식 사이트](https://vuejs.org/)
+        * [Vue.js 스타일 가이드](https://v2.vuejs.org/v2/style-guide/?redirect=true)
+            * 한국어 지원
+        * [Vue.js Cookbook](https://v2.vuejs.org/v2/cookbook/?redirect=true)
+            * 실무에 부딪히는 문제에 대한 내용 기재
+        * [Vuex 공식 문서](https://v3.vuex.vuejs.org/)
+        * [VueRouter 공식 문서](https://v3.router.vuejs.org/)
+        * [Vue CLI 공식 문서](https://cli.vuejs.org/)
+    * 개인 블로그
+        * [네비게이션 가드](https://joshua1988.github.io/web-development/vuejs/vue-router-navigation-guards/)
+        * [자바스크립트 비동기 처리와 콜백 함수](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/)
+        * [자바스크립트 Promise 이해하기](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/)
+        * [자바스크립트 async와 await](https://joshua1988.github.io/web-development/javascript/js-async-await/)
+        * [자바스크립트의 동작원리: 엔진, 런타임, 호출 스택](https://joshua1988.github.io/web-development/translation/javascript/how-js-works-inside-engine/)
+        * [이벤트 버블링과 캡처링](https://joshua1988.github.io/web-development/javascript/event-propagation-delegation/)
